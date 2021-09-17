@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Rubik:ital,wght@0,400;0,500;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', 'Ubuntu', Arial;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#intro{
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 5;
+    
+    
+}
+
+#stars{
+    position: absolute;
+    width: 95%;
+    height: 120vh;
+    overflow: hidden;
+    
+    
+}
+
+#nadpis{
+    position: relative;
+    padding: 3%;
+    color: white;
+    font-size: 10vw;
+}
+
+
+#content{
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    height: 150vh;
+    background-color: #0c0c0c;
+}
+
+nav{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    width: 30%;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    flex-direction: row;
+    text-align: center;
+   
+}
+
+nav a{
+    padding: 2% 5%;
+    font-size: 1.25vw;
+    border: solid white 2px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    animation-duration: 0.5s;
+    animation-name: prechod;
+    animation-fill-mode: forwards;
+}
+
+@keyframes prechod {
+    to{background-color: white; color: black;}
+}
+
+#wave{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+#aboutus{
+    top: 10vh;
+    position: relative;
+    background-color: rgb(128, 197, 253);
+    width: 100%;
+    height: 140vh;
+    
+}
