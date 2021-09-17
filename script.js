@@ -1,5 +1,17 @@
 
+/*function for createing all stars*/
+function creator(){
+    for(let i = 0; i < 120; i++){
+        
+        let newStar = document.createElement('div');
+        newStar.className="star";
+        box.appendChild(newStar);
+        
+    }
+}
 
+
+/*function got crating stars coordinates*/
 function constructor() {
     stars.forEach(star => {
         let randNumberWidth = Math.floor((Math.random() * 10000) % (window.innerWidth - 20));
@@ -12,15 +24,19 @@ function constructor() {
 
 }
 
+/* VARIABLES */ 
 
-const stars = document.querySelectorAll(".star");
+
 const nadpis = document.getElementById("nadpis");
 let box = document.getElementById("stars");
 
+creator();
+
+const stars = document.querySelectorAll(".star");
 constructor();
 
 
-
+/*action on mouse move in web*/
 box.addEventListener("mousemove", event => {
     let moveX = ((window.innerWidth)/2 - event.pageX) * 0.1;
     let moveY = ((window.innerHeight)/2 - event.pageY) * 0.1;
@@ -30,7 +46,7 @@ box.addEventListener("mousemove", event => {
 
 })
 
-
+/*action on scroll event in web*/
 addEventListener("scroll", () => {
     let valueOfScroll = window.scrollY;
     stars.forEach(star => {
