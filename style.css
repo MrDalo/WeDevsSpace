@@ -81,7 +81,7 @@ nav{
 
 nav a{
     padding: 2% 5%;
-    font-size: 1.25em;
+    font-size: 1em;
     border: solid white 2px;
     border-radius: 40px;
     text-decoration: none;
@@ -204,7 +204,7 @@ nav a:hover{
 #members{
     position: relative;
     width: 100%;
-    height: 250vh;
+    height: 400vh;
     background-color: #0c0c0c;
 }
 
@@ -260,6 +260,16 @@ nav a:hover{
 #patriksehnoutek{
     position: relative;
     width: 100%;
-    height: 150vh;
-    background-color: rgb(128, 197, 253);
+    height: 160vh;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+#marcelfeiler{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+}
+
