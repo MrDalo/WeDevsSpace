@@ -265,7 +265,35 @@ nav a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
+
+#raketaSVG{
+    position: absolute;
+    
+    width: 10%;
+    left: 8%;
+    bottom: 50vh;
+    height: 47vh;
+    animation: raketa 2s linear infinite alternate;
+    
+}
+
+
+
+
+#raketaSVG img{
+    width: 100%;
+    height: auto;
+    transform: rotateZ(45deg);
+}
+
+
+@keyframes raketa {
+        to{transform: translateY(-10%);}
+}
+
+
 
 #marcelfeiler{
     position: relative;
