@@ -11,6 +11,7 @@
 a{
     font-weight: 800;
     color: white;
+    text-decoration: underline;
 }
 
 p{
@@ -203,7 +204,7 @@ nav a:hover{
 #members{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 250vh;
     background-color: #0c0c0c;
 }
 
@@ -217,7 +218,7 @@ nav a:hover{
     margin-top: 10%;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 60vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -230,6 +231,7 @@ nav a:hover{
     height: 100%;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
 #daliborLeft img{
@@ -244,10 +246,20 @@ nav a:hover{
     height: 100%;
     text-align: center;
     color: white;  
+    z-index: 10;
+    overflow: hidden;
+    font-size: 0.8em;
 }
 
 #daliborRight .membersNadpis{
     padding-bottom: 3%;
     font-size: 3em;
+    
 }
 
+#patriksehnoutek{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(128, 197, 253);
+}
