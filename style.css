@@ -1,14 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Mono:wght@400;500&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family:   'Roboto Mono','Lora', 'Roboto Slab', Arial;
+    text-decoration: none;
+}
+
+a{
+    font-weight: 800;
+    color: white;
+}
+
+p{
+    font-size: 1em;
 }
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 #intro{
@@ -28,8 +39,6 @@ html{
     background-color: white;
     border-radius: 50%;
     z-index: 5;
-    
-    
 }
 
 #stars{
@@ -37,15 +46,13 @@ html{
     width: 95%;
     height: 120vh;
     overflow: hidden;
-    
-    
 }
 
 #nadpis{
     position: relative;
     padding: 3%;
     color: white;
-    font-size: 10vw;
+    font-size: 10em;
 }
 
 
@@ -69,12 +76,11 @@ nav{
     padding-right: 5%;
     flex-direction: row;
     text-align: center;
-   
 }
 
 nav a{
     padding: 2% 5%;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     border: solid white 2px;
     border-radius: 40px;
     text-decoration: none;
@@ -103,7 +109,6 @@ nav a:hover{
 
 .waveup{
     bottom: -1vh;
-
 }
 
 #aboutus{
@@ -133,10 +138,9 @@ nav a:hover{
 }
 
 #aboutusContent h1{
-   
     margin-top: 4%;
     margin-bottom: 4%;
-    font-size: 4.5vw;
+    font-size: 4.5em;
 }
 
 
@@ -145,21 +149,12 @@ nav a:hover{
     width: 20%;
     top: 30%;
     height: 60vh;
-    
-}
-
-#members{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #0c0c0c;
 }
 
 #aboutusImage svg{
     position: absolute;
     width: 100%;
     height: auto;
-    
 }
 
 #elevator{
@@ -172,15 +167,12 @@ nav a:hover{
     50% {transform: translateX(0%); }
     75% {transform: translateX(-0.5%);}
     100%{transform: translateX(0%); }
-    
 }
 
 
 #Alien1{
     transform: translateY(20%);
     animation: alien 2s linear infinite alternate;
-
-
 }
 
 @keyframes alien {
@@ -188,7 +180,6 @@ nav a:hover{
     50% {transform: translateY(8%);}
     75% {transform: translateY(0%);}
     100%{transform: translateY(-8%);}
-
 }
 
 #hand{
@@ -207,6 +198,56 @@ nav a:hover{
     68% {transform: rotateZ(10deg);}
     86% {transform: rotateZ(20deg);}
     100% {transform: rotateZ(30deg);}
-    
-    
 }
+
+#members{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+}
+
+.membersNadpis{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+#daliborkralik{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#daliborLeft{
+    position: relative;
+    background-color: rgb(128, 197, 253);
+    box-shadow: 10px 2px 10px 5px #3673A5;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#daliborLeft img{
+    position: absolute;
+    height: 95%;
+    bottom: 0;
+}
+
+#daliborRight{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    color: white;  
+}
+
+#daliborRight .membersNadpis{
+    padding-bottom: 3%;
+    font-size: 3em;
+}
+
