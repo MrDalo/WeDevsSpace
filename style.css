@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Rubik:ital,wght@0,400;0,500;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Mono:wght@400;500&family=Roboto+Slab:wght@400;500&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Mono', 'Ubuntu', Arial;
+    font-family:   'Roboto Mono','Lora', 'Roboto Slab', Arial;
 }
 
 html{
@@ -91,18 +91,32 @@ nav a:hover{
     to{background-color: white; color: black;}
 }
 
-#wave{
+.wavedown, .waveup{
     position: absolute;
     width: 100%;
-    top: 0;
     z-index: 3;
 }
 
+.wavedown{
+    top: 0vh;
+}
+
+.waveup{
+    bottom: -1vh;
+
+}
+
 #aboutus{
-    top: 10vh;
+    top: 0;
     position: relative;
     background-color: rgb(128, 197, 253);
     width: 100%;
-    height: 140vh;
-    
+    height: 150vh;
+}
+
+#members{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
 }
