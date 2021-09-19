@@ -234,12 +234,13 @@ nav a:hover{
     display: flex;
     justify-content: center;
     z-index: 10;
+    overflow: hidden;
 }
 
 #daliborLeft img{
     position: absolute;
     height: 95%;
-    bottom: 0;
+    bottom: -10%;
 }
 
 #daliborRight{

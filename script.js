@@ -230,7 +230,7 @@ window.addEventListener("scroll", () => {
         
         let image = daliborBox.getElementsByTagName("img");
         console.log(image[0]);
-        image[0].style.transform=`translateY(${rect.top * 0.1}px)`
+        image[0].style.transform=`translateY(${rect.top * 0.2}px)`
         
     }
 
