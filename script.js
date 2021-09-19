@@ -29,9 +29,19 @@ function createSvg(){
 }
 
 function createProgrammer(){
-    document.getElementById("patrikleft").innerHTML = programmer;
+    document.getElementById("patrikLeft").innerHTML = programmer;
 }
 
+
+function isInViewport(element){
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
 /* VARIABLES */ 
 
@@ -197,6 +207,7 @@ createProgrammer();
 creator();
 
 const stars = document.querySelectorAll(".star");
+const daliborBox = document.getElementById("daliborkralik");
 constructor();
 
 
@@ -211,13 +222,15 @@ box.addEventListener("mousemove", event => {
 })
 
 /*action on scroll event in web*/
-addEventListener("scroll", () => {
+document.addEventListener("scroll", () => {
     let valueOfScroll = window.scrollY;
     stars.forEach(star => {
         star.style.transform = `translateY(${-valueOfScroll * 0.4}px)`;
     })
 
     nadpis.style.opacity = `${1 - (valueOfScroll / (window.innerHeight / 2))}`;
+
+    isInViewport(daliborBox);
 
 
 })

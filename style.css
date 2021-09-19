@@ -270,9 +270,9 @@ nav a:hover{
     overflow: hidden;
 }
 
-#patriksehnoute .waveup{
-    bottom: -2vh;
-    z-index: 1000;
+#patriksehnoutek .waveup{
+    bottom: -1vh;
+    z-index: 11;
 }
 
 #patriksehnoutekContent{
@@ -283,7 +283,7 @@ nav a:hover{
     justify-content: space-evenly;
 }
 
-#patrikleft{
+#patrikLeft{
     text-align: center;
     width: 30%;
     height: 100%;   
@@ -292,7 +292,7 @@ nav a:hover{
     align-items: center;
 }
 
-#patrikleft svg{
+#patrikLeft svg{
     position: relative;
     width: 100%;
 }
@@ -314,7 +314,7 @@ nav a:hover{
     to{transform: translateX(100px);}
 }
 
-#patrikright{
+#patrikRight{
     text-align: center;
     padding: 1%;
     position: relative;
@@ -328,12 +328,12 @@ nav a:hover{
     flex-direction: column;
 }
 
-#patrikright h1{  
-    padding-bottom: 5%;
+#patrikRight h1{  
+    padding-bottom: 8%;
     font-size: 3em;
 }
 
-#patrikright h1 a{
+#patrikRight h1 a{
    color: black;
 }
 
@@ -342,25 +342,60 @@ nav a:hover{
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
+}
+
+#marcelLeft{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    color: white;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left:10%;
+    top:0%;
+    text-align: center;
+}
+
+#marcelLeft h1{  
+    padding-bottom: 8%;
+    font-size: 3em;
+}
+
+#marcelRight{
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    padding: 1%;
+    right:5%;
+    bottom:10%;
+    z-index: 3;
+    background-color: rgb(128, 197, 253);
+    box-shadow: 15px 10px 10px 10px #3673A5;
+    
 }
 
 #marcelfeiler svg{
     position: absolute;
-    top: 10vh;
     left: -1%;
-    width: 101%;
+    width: 75%;
+    bottom: 12%;
+    z-index: 2;
     stroke-linecap: round;
     stroke-dashoffset: 0;
-    stroke-dasharray: 3600;
-    animation: dash 20s linear alternate infinite;
+    stroke-dasharray: 60;
+    animation: dash 20s linear reverse infinite;
 }
+
 
 @keyframes dash {
     from {
       stroke-dashoffset: 0;
     }
     to {
-      stroke-dashoffset: 3600;
+      stroke-dashoffset: 600;
     }
   }
