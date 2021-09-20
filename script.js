@@ -11,7 +11,7 @@ function creator(){
 }
 
 
-/*function got crating stars coordinates*/
+/*function for creating stars coordinates*/
 function constructor() {
     stars.forEach(star => {
         let randNumberWidth = Math.floor((Math.random() * 10000) % (window.innerWidth - 20));
@@ -230,7 +230,7 @@ window.addEventListener("scroll", () => {
         
         let image = daliborBox.getElementsByTagName("img");
         console.log(image[0]);
-        image[0].style.transform=`translateY(${rect.top * 0.2}px)`
+        image[0].style.transform=`translateY(${rect.top * 0.1}px)`
         
     }
 
