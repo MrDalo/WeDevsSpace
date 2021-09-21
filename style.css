@@ -483,7 +483,7 @@ nav a:hover{
     position: absolute;
     right: -1%;
     width: 75%;
-    bottom: 10%;
+    bottom: 15%;
     z-index: 2;
     stroke-linecap: round;
     stroke-dashoffset: 0;
@@ -495,4 +495,60 @@ nav a:hover{
 #lukaschytilNavigation{
     position: absolute;
     top: 10%;
+}
+
+
+#jansvitana{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.lighton{  
+    background-image: radial-gradient(at 40% ,  white 10%, #eeeeee 40%,  #666666);
+}
+
+#bulb{
+    cursor: pointer;
+}
+
+#jansvitana .wavedown{
+    position: absolute;
+    height: 35%;
+    width: auto;
+    animation: wavemove 20s alternate infinite linear;
+}
+
+@keyframes wavemove {
+    0%{transform: translateX(-2%);}
+    25%{transform: translateX(-5%);}
+    50%{transform: translateX(-10%);}
+    75%{transform: translateX(-15%);}
+    100%{transform: translateX(-20%);}
+    
+}
+
+#jansvitanaLeft{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    
+}
+
+#lightBulb{
+    position: relative;
+    width: 100%;
+
+}
+
+#colorChange{
+    fill:#6C63FF;
+}
+
+#light{
+    fill: #888888;
 }
