@@ -1,570 +1,640 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:   'Roboto Mono','Lora', 'Roboto Slab', Arial;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", "Lora", "Roboto Slab", Arial;
+  text-decoration: none;
 }
 
-a{
-    font-weight: 800;
-    color: white;
-    text-decoration: underline;
+a {
+  font-weight: 800;
+  color: white;
+  text-decoration: underline;
 }
 
-p{
-    font-size: 1em;
+p {
+  font-size: 1em;
 }
 
-
-
-html{
-    scroll-behavior: smooth;
-    font-size: 16px;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
-
-body{
-   
+body {
 }
 
-#intro{
-    width: 100%;
-    height: 100vh;
-    background-color: #0c0c0c;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#intro {
+  width: 100%;
+  height: 100vh;
+  background-color: #0c0c0c;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.star{
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 5;
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 5;
 }
 
-#stars{
-    position: absolute;
-    width: 95%;
-    height: 120vh;
-    overflow: hidden;
+#stars {
+  position: absolute;
+  width: 95%;
+  height: 120vh;
+  overflow: hidden;
 }
 
-#nadpis{
-    position: relative;
-    padding: 3%;
-    color: white;
-    font-size: 10em;
+#nadpis {
+  position: relative;
+  padding: 3%;
+  color: white;
+  font-size: 10em;
 }
 
-
-#content{
-    z-index: 2;
-    width: 100%;
-    position: relative;
-    height: 807vh;
-    background-color: #0c0c0c;
+#content {
+  z-index: 2;
+  width: 100%;
+  position: relative;
+  height: 867vh;
+  background-color: #0c0c0c;
 }
 
-nav{
-    position: absolute;
-    z-index: 10;
-    top: 6%;
-    width: 30%;
-    right: 0;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 5%;
-    flex-direction: row;
-    text-align: center;
+nav {
+  position: absolute;
+  z-index: 10;
+  top: 6%;
+  width: 30%;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+  flex-direction: row;
+  text-align: center;
 }
 
-nav a{
-    padding: 2% 5%;
-    font-size: 1em;
-    border: solid white 2px;
-    border-radius: 40px;
-    text-decoration: none;
-    color: white;
+nav a {
+  padding: 2% 5%;
+  font-size: 1em;
+  border: solid white 2px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
 }
 
-nav a:hover{
-    animation-duration: 0.5s;
-    animation-name: prechod;
-    animation-fill-mode: forwards;
+nav a:hover {
+  animation-duration: 0.5s;
+  animation-name: prechod;
+  animation-fill-mode: forwards;
 }
 
 @keyframes prechod {
-    to{background-color: white; color: black;}
+  to {
+    background-color: white;
+    color: black;
+  }
 }
 
-
-
-.wavedown{
-    position: absolute;
-    top: -1vh;
-    width: 100%;
-    z-index: 5;
+.wavedown {
+  position: absolute;
+  top: -1vh;
+  width: 100%;
+  z-index: 5;
 }
 
-.waveup{
-    position: absolute;
-    bottom: -1vh;
-    width: 100%;
+.waveup {
+  position: absolute;
+  bottom: -1vh;
+  width: 100%;
 }
 
-#aboutus{
-    top: 0;
-    position: relative;
-    background-color: rgb(128, 197, 253);
-    width: 100%;
-    height: 150vh;
-    color:white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
+#aboutus {
+  top: 0;
+  position: relative;
+  background-color: rgb(128, 197, 253);
+  width: 100%;
+  height: 150vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-#aboutusAnchor{
-    position: relative;
-    top: 15%;
+#aboutusAnchor {
+  position: relative;
+  top: 15%;
 }
 
-#aboutusContent{
-    position: relative;
-    width: 40%;
-    top: 30%;
-    height: 60vh;
-    text-align: center;
+#aboutusContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  top: 30%;
+  height: 60vh;
+  text-align: center;
 }
 
-#aboutusContent h1{
-    margin-top: 4%;
-    margin-bottom: 4%;
-    font-size: 4.5em;
+#aboutusContent h1 {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 4.5em;
 }
 
-
-#aboutusImage{
-    position: relative;
-    width: 20%;
-    top: 30%;
-    height: 60vh;
+#aboutusImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  top: 30%;
+  height: 60vh;
 }
 
-#aboutusImage svg{
-    position: absolute;
-    width: 100%;
-    height: auto;
+#aboutusImage svg {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-#elevator{
-    fill: white;
-    animation: alienElevator 3s linear infinite alternate;
+#elevator {
+  fill: white;
+  animation: alienElevator 3s linear infinite alternate;
 }
 
 @keyframes alienElevator {
-    25% {opacity: 0.3; }
-    50% {opacity: 0.5; }
-    75% {opacity: 0.75;}
-    100%{opacity:  1; }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-#Alien1{
-    transform: translateY(20%);
-    animation: alien 2s linear infinite alternate;
+#Alien1 {
+  transform: translateY(20%);
+  animation: alien 2s linear infinite alternate;
 }
 
 @keyframes alien {
-    25% {transform: translateY(15%);}
-    50% {transform: translateY(8%);}
-    75% {transform: translateY(0%);}
-    100%{transform: translateY(-8%);}
+  25% {
+    transform: translateY(15%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-8%);
+  }
 }
 
-#hand{
-    transform: translateY(5px);
-    transform: translateX(5px);
-    transform-origin: center;
-    transform-box: fill-box;
-    animation: handanimation 1s linear infinite alternate;
+#hand {
+  transform: translateY(5px);
+  transform: translateX(5px);
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: handanimation 1s linear infinite alternate;
 }
 
 @keyframes handanimation {
-    0% {transform: rotateZ(30deg);}
-    18% {transform: rotateZ(20deg);}
-    36% {transform: rotateZ(10deg);}
-    50%{transform: rotateZ(0deg);}
-    68% {transform: rotateZ(10deg);}
-    86% {transform: rotateZ(20deg);}
-    100% {transform: rotateZ(30deg);}
+  0% {
+    transform: rotateZ(30deg);
+  }
+  18% {
+    transform: rotateZ(20deg);
+  }
+  36% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  68% {
+    transform: rotateZ(10deg);
+  }
+  86% {
+    transform: rotateZ(20deg);
+  }
+  100% {
+    transform: rotateZ(30deg);
+  }
 }
 
 /*MEMBERS*/
-#members{
-    position: relative;
-    width: 100%;
-    height: 657vh;
-    background-color: #0c0c0c;
+#members {
+  position: relative;
+  width: 100%;
+  height: 717vh;
+  background-color: #0c0c0c;
 }
 
-.membersNadpis{
-    text-align: center;
-    color: white;
-    font-size: 4em;
+.membersNadpis {
+  text-align: center;
+  color: white;
+  font-size: 4em;
 }
 
+#memberButtons {
+  margin-top: 10vh;
+  width: 60%;
+  position: relative;
+  height: 15vh;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
 
-#memberButtons{
-    margin-top: 10vh;
-    width: 60%;
-    position: relative;
-    height: 15vh;
-    left:  20%;
-    right: 20%;
-    display: flex;
-    justify-content: center;
-    
-    column-gap: 20px;
-    align-items: center;    
-    flex-wrap: wrap;
+  column-gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#memberButtons a{
-    text-align: center;
-    text-decoration: none;
-    width: 26%;
-    background-color: #0c0c0c;
-    border: white 2px solid;
-    color: white;
-    padding: 0.5%;
-    border-radius: 40px;
+#memberButtons a {
+  text-align: center;
+  text-decoration: none;
+  width: 26%;
+  background-color: #0c0c0c;
+  border: white 2px solid;
+  color: white;
+  padding: 0.5%;
+  border-radius: 40px;
 }
 
-
-#memberButtons a:hover{
-    animation: prechod 0.5s forwards alternate;
+#memberButtons a:hover {
+  animation: prechod 0.5s forwards alternate;
 }
 /*Dalibor Kralik*/
-#daliborkralik{
-    margin-top: 12vh;
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: space-evenly;
+#daliborkralik {
+  margin-top: 12vh;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#daliborLeft{
-    position: relative;
-    background-color: rgb(128, 197, 253);
-    box-shadow: 10px 2px 10px 5px #3673A5;
-    width: 25%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-    overflow: hidden;
+#daliborLeft {
+  position: relative;
+  background-color: rgb(128, 197, 253);
+  box-shadow: 10px 2px 10px 5px #3673a5;
+  width: 25%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  overflow: hidden;
 }
 
-#daliborLeft img{
-    position: absolute;
-    height: 90%;
-    bottom: -8%;
+#daliborLeft img {
+  position: absolute;
+  height: 90%;
+  bottom: -8%;
 }
 
-#daliborRight{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    color: white;  
-    z-index: 10;
-    overflow: hidden;
-    font-size: 0.8em;
-    padding-bottom: 10%;
+#daliborRight {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  z-index: 10;
+  overflow: hidden;
+  font-size: 0.8em;
+  padding-bottom: 10%;
 }
 
-#daliborRight h1{
-    padding-bottom: 3%;
-    font-size: 3em;
-    
+#daliborRight h1 {
+  padding-bottom: 3%;
+  font-size: 3em;
 }
 
-#daliborkralikNavigation{
-    position: absolute;
-    top: -20vh;
+#daliborkralikNavigation {
+  position: absolute;
+  top: -20vh;
 }
 
 /*Patrik Sehnoutek*/
-#patriksehnoutek{
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    width: 100%;
-    height: 150vh;
-    background-color: white;
-    overflow: hidden;
+#patriksehnoutek {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  width: 100%;
+  height: 150vh;
+  background-color: white;
+  overflow: hidden;
 }
 
-
-
-#patriksehnoutekContent{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
+#patriksehnoutekContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#patriksehnoutekNavigation{
-    position: absolute;
-    top: -16vh;
+#patriksehnoutekNavigation {
+  position: absolute;
+  top: -16vh;
 }
 
-#patrikLeft{
-    text-align: center;
-    width: 30%;
-    height: 100%;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#patrikLeft {
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#patrikLeft svg{
-    position: relative;
-    width: 100%;
+#patrikLeft svg {
+  position: relative;
+  width: 100%;
 }
 
-#codeLines{
-    animation: lineOpacity infinite alternate ease-in 2s;
+#codeLines {
+  animation: lineOpacity infinite alternate ease-in 2s;
 }
 
 @keyframes lineOpacity {
-    to{opacity: 0.2;}
-    
+  to {
+    opacity: 0.2;
+  }
 }
 
-#mouse{
-    animation: mouseMovement infinite alternate 4s linear;
+#mouse {
+  animation: mouseMovement infinite alternate 4s linear;
 }
 
 @keyframes mouseMovement {
-    to{transform: translateX(100px);}
+  to {
+    transform: translateX(100px);
+  }
 }
 
-#patrikRight{
-    text-align: center;
-    padding: 1%;
-    position: relative;
-    width: 40%;
-    color: black;
-    height: 100%;
-    font-size: 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#patrikRight {
+  text-align: center;
+  padding: 1%;
+  position: relative;
+  width: 40%;
+  color: black;
+  height: 100%;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#patrikRight h1{  
-    padding-bottom: 8%;
-    font-size: 3em;
+#patrikRight h1 {
+  padding-bottom: 8%;
+  font-size: 3em;
 }
 
-#patrikRight h1 a{
-   color: black;
+#patrikRight h1 a {
+  color: black;
 }
 
 /*Marcel Feiler*/
-#marcelfeiler{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 120vh;
-    top: -2vh;
-    z-index: 4;
-    
+#marcelfeiler {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  top: -2vh;
+  z-index: 4;
 }
 
-#marcelLeft, #lukasRight{
-    position: absolute;
-    width: 40%;
-    height: 60%;
-    color: white;
-    font-size: 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    z-index: 2;
+#marcelLeft,
+#lukasRight {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  color: white;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
 }
 
-#marcelLeft{
-    left:10%;
-    top:5%;
+#marcelLeft {
+  left: 10%;
+  top: 5%;
 }
 
-#marcelLeft h1, #lukasRight h1{  
-    padding-bottom: 8%;
-    font-size: 3em;
+#marcelLeft h1,
+#lukasRight h1 {
+  padding-bottom: 8%;
+  font-size: 3em;
 }
 
-
-
-#marcelRight, #lukasLeft{
-    position: absolute;
-    width: 25%;
-    height: 60%;
-    padding: 1%;
-    z-index: 3;
-    background-color: rgb(128, 197, 253);
-    
+#marcelRight,
+#lukasLeft {
+  position: absolute;
+  width: 25%;
+  height: 60%;
+  padding: 1%;
+  z-index: 3;
+  background-color: rgb(128, 197, 253);
 }
 
-#marcelRight{
-    right:5%;
-    bottom:10%;
-    box-shadow: 10px 4px 10px 5px #3673A5;
+#marcelRight {
+  right: 5%;
+  bottom: 15%;
+  box-shadow: 10px 4px 10px 5px #3673a5;
 }
 
-
-#marcelfeiler svg{
-    position: absolute;
-    left: -1%;
-    width: 75%;
-    bottom: 10%;
-    z-index: 2;
-    stroke-linecap: round;
-    stroke-dashoffset: 0;
-    stroke-dasharray: 60;
-    animation: dash 20s linear reverse infinite;
+#marcelfeiler svg {
+  position: absolute;
+  left: -1%;
+  width: 75%;
+  bottom: 10%;
+  z-index: 2;
+  stroke-linecap: round;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 60;
+  animation: dash 20s linear reverse infinite;
 }
-
 
 @keyframes dash {
-    from {
-      stroke-dashoffset: 0;
-    }
-    to {
-      stroke-dashoffset: 600;
-    }
-  }
-
-#lukaschytil{
-    background-color: #0c0c0c;   
-    position: relative;
-    width: 100%;
-    height: 120vh;
-    overflow: hidden;
-    
-}
-
-#lukasRight{
-    right:10%;
-    top:0;
-
-}
-
-#lukasLeft{
-    left:10%;
-    top:20%;
-    box-shadow: -10px 4px 10px 5px #3673A5;
-}
-
-#lukaschytil svg{
-    position: absolute;
-    right: -1%;
-    width: 75%;
-    bottom: 15%;
-    z-index: 2;
-    stroke-linecap: round;
+  from {
     stroke-dashoffset: 0;
-    stroke-dasharray: 60;
-    animation: dash 20s linear normal infinite;
-
+  }
+  to {
+    stroke-dashoffset: 600;
+  }
 }
 
-#lukaschytilNavigation{
-    position: absolute;
-    top: 10%;
+#lukaschytil {
+  background-color: #0c0c0c;
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
 }
 
-
-#jansvitana{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 140vh;
-    display: flex;
-    justify-content: center;
-    background-color: #333333;
+#lukasRight {
+  right: 10%;
+  top: 0;
 }
 
-.lighton{  
-    background-image: radial-gradient(at 40% ,  white 10%, #eeeeee 40%,  #666666);
+#lukasLeft {
+  left: 10%;
+  top: 20%;
+  box-shadow: -10px 4px 10px 5px #3673a5;
 }
 
-#bulb{
-    cursor: pointer;
+#lukaschytil svg {
+  position: absolute;
+  right: -1%;
+  width: 75%;
+  bottom: 15%;
+  z-index: 2;
+  stroke-linecap: round;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 60;
+  animation: dash 20s linear reverse infinite;
 }
 
-#jansvitana .wavedown{
-    position: absolute;
-    height: 35%;
-    width: auto;
-    animation: wavemove 20s alternate infinite linear;
+#lukaschytilNavigation {
+  position: absolute;
+  top: 10%;
+}
+
+#jansvitana {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+}
+
+.lighton {
+  background-image: radial-gradient(at 40%, white 10%, #eeeeee 40%, #666666);
+}
+
+#bulb {
+  cursor: pointer;
+}
+
+#jansvitana .wavedown {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  animation: wavemove 20s alternate infinite linear;
+}
+
+#jansvitana .waveup {
+  height: 25%;
+  width: auto;
+  animation: wavemove 20s alternate infinite linear;
 }
 
 @keyframes wavemove {
-    0%{transform: translateX(-2%);}
-    25%{transform: translateX(-5%);}
-    50%{transform: translateX(-10%);}
-    75%{transform: translateX(-15%);}
-    100%{transform: translateX(-20%);}
-    
+  0% {
+    transform: translateX(-2%);
+  }
+  25% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  75% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
 }
 
-#jansvitanaLeft{
-    position: relative;
-    height: 100%;
+#jansvitanaLeft {
+  position: relative;
+  height: 70%;
+  width: 30%;
+}
+
+#lightBulb {
+  position: relative;
+  width: 100%;
+}
+
+#colorChange {
+  fill: #6c63ff;
+}
+
+#light {
+  fill: #888888;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  position: relative;
+  color: white;
+  text-align: center;
+
+  bottom: 0;
+  z-index: 10;
+  background-color: #0c0c0c;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  html {
+    font-size: 18px;
+  }
+
+  #memberButtons a {
     width: 30%;
-    
+  }
+
+  #daliborLeft{
+    width: 35%;
+    height: 80%;
+
+  }
+
+  #marcelRight, #lukasLeft{
+    width: 35%;
+    height: 50%;
+  }
+
 }
 
-#lightBulb{
-    position: relative;
-    width: 100%;
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 }
 
-#colorChange{
-    fill:#6C63FF;
+@media only screen and (min-width: 640px) and (max-width: 767px) {
 }
 
-#light{
-    fill: #888888;
-}
-
-footer{
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    border: red solid 2px;
-    bottom: 0;
-    z-index: 100;
+@media only screen and (max-width: 639px) {
 }
