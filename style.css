@@ -482,6 +482,11 @@ nav a:hover {
   animation: dash 20s linear reverse infinite;
 }
 
+#marcelNavigation{
+    position: absolute;
+
+}
+
 @keyframes dash {
   from {
     stroke-dashoffset: 0;
@@ -628,267 +633,281 @@ footer {
     width: 35%;
     height: 50%;
   }
-  #daliborkralikNavigation{
+  #daliborkralikNavigation {
     top: -5vh;
-}
+  }
 
-#patriksehnoutekNavigation{
+  #patriksehnoutekNavigation {
     top: 0;
+  }
 
-}
-
-
-#lukaschytilNavigation{
+  #lukaschytilNavigation {
     top: 0;
-}
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    html {
-        font-size: 18px;
-      }
+  html {
+    font-size: 18px;
+  }
 
-    nav{
+  nav {
+    width: 40%;
+  }
 
-        width: 40%;
-    }
+  #aboutus {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    #aboutus{
-        flex-direction: column;
-        justify-content: center;
-    }
+  #aboutusContent {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    top: 0;
+  }
 
+  #aboutusImage {
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    height: 40vh;
+  }
 
-    #aboutusContent{
-        width: 80%;
-        left:10%;
-        right: 10%;
-        top: 0;
-    }
+  #content {
+    height: 887vh;
+  }
 
-    #aboutusImage{
-        width: 50%;
-        left: 25%;
-        right: 25%;
-        top: 0;
-        height: 40vh;
-        
-    }
+  #members {
+    height: 737vh;
+  }
 
-    #content{
-        height: 887vh;
-    }
+  #memberButtons {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
 
-    #members{
-        height: 737vh;
+  #memberButtons a {
+    width: 31%;
+  }
 
-    }
+  #daliborkralik {
+    height: 100vh;
+  }
 
-    #memberButtons{
-        width: 90%;
-        left: 5%;
-        right: 5%;
+  #daliborLeft {
+    top: 5%;
+    width: 35%;
+    height: 75%;
+  }
 
-    }
+  #daliborRight {
+    padding-bottom: 25%;
+  }
 
-    #memberButtons a{
-        width: 31%;
-    }
+  #patriksehnoutekContent {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    #daliborkralik{
-        height: 100vh;
-    }
+  #patrikLeft {
+    top: 10%;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
 
-    #daliborLeft {
-        top: 5%;
-        width: 35%;
-        height: 75%;
-      }
+  #patrikRight {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+  }
 
-    #daliborRight{
-        padding-bottom: 25%;
-    }
-
-    
-    #patriksehnoutekContent{
-        justify-content: center;
-        flex-direction: column;
-        
-    }
-    
-    #patrikLeft{
-        top: 10%;
-        width: 80%;
-        left: 10%;
-        right: 10%;
-
-    }    
-    
-    #patrikRight{
-        position: relative;
-        width: 50%;
-        left: 25%;
-        right: 25%;
-    }
-
-    #marcelRight,
-    #lukasLeft {
-        width: 35%;
+  #marcelRight,
+  #lukasLeft {
+    width: 35%;
     height: 50%;
-}
-  #lukasLeft{
-      top: 25%;
-    }
-
-    #lukaschytil svg{
-        bottom: 20%;
   }
-  
-  #daliborkralikNavigation{
-      top: 0;
-  }
-  
-  #patriksehnoutekNavigation{
-      top: 0;
-  
+  #lukasLeft {
+    top: 25%;
   }
 
-  
-  #lukaschytilNavigation{
-      top: -2vh;
+  #lukaschytil svg {
+    bottom: 20%;
+  }
+
+  #daliborkralikNavigation {
+    top: 0;
+  }
+
+  #patriksehnoutekNavigation {
+    top: 0;
+  }
+
+  #lukaschytilNavigation {
+    top: -2vh;
   }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
-    html {
-        font-size: 18px;
-      }
+  html {
+    font-size: 18px;
+  }
 
-    nav{
-        /*TODO Create burger Menu */
-        width: 40%;
-    }
+  nav {
+    /*TODO Create burger Menu */
+    width: 40%;
+  }
 
-    #nadpis{
-        font-size: 6em;
-    }
+  #nadpis {
+    font-size: 6em;
+  }
 
-    #aboutus{
-        flex-direction: column;
-        justify-content: center;
-    }
+  #aboutus {
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  #aboutusContent {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    top: 0;
+  }
 
-    #aboutusContent{
-        width: 80%;
-        left:10%;
-        right: 10%;
-        top: 0;
-    }
+  #aboutusImage {
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    height: 40vh;
+  }
 
-    #aboutusImage{
-        width: 50%;
-        left: 25%;
-        right: 25%;
-        top: 0;
-        height: 40vh;
-        
-    }
+  #content {
+    height: 947vh;
+  }
 
-    #content{
-        height: 907vh;
-    }
+  #members {
+    height: 797vh;
+  }
 
-    #members{
-        height: 757vh;
+  #memberButtons {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
 
-    }
+  #memberButtons span {
+    display: none;
+  }
+  #memberButtons a {
+    width: 31%;
+  }
 
-    #memberButtons{
-        width: 90%;
-        left: 5%;
-        right: 5%;
+  #daliborkralik {
+    height: 120vh;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
 
-    }
+  #daliborLeft {
+    top: 0;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    height: 60%;
+    margin-bottom: 10vh;
+  }
 
-    #memberButtons span{
-        display: none;
-    }
-    #memberButtons a{
-        width: 31%;
-    }
+  #daliborRight {
+    top: 0;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    height: 70%;
+    padding-bottom: 0;
+  }
 
-    #daliborkralik{
-        height: 120vh;
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-    }
+  #patriksehnoutekContent {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    #daliborLeft {
-        top: 0;
-        width: 50%;
-        left: 25%;
-        right: 25%;
-        height: 60%;
-        margin-bottom: 10vh;
-      }
+  #patrikLeft {
+    top: 10%;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
 
-    #daliborRight{
-        top: 0;
-        width: 80%;
-        left: 10%;
-        right: 10%;
-        height: 70%;
-        padding-bottom: 0;
-    }
+  #patrikRight {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+  }
 
-    
-    #patriksehnoutekContent{
-        justify-content: center;
-        flex-direction: column;
-        
-    }
-    
-    #patrikLeft{
-        top: 10%;
-        width: 80%;
-        left: 10%;
-        right: 10%;
+  #lukaschytil svg,
+  #marcelfeiler svg {
+    display: none;
+  }
 
-    }    
-    
-    #patrikRight{
-        position: relative;
-        width: 50%;
-        left: 25%;
-        right: 25%;
-    }
+  #marcelfeiler,
+  #lukaschytil {
+    display: flex;
+    justify-content: center;
+    height: 140vh;
+  }
 
-    #marcelRight,
-    #lukasLeft {
-        width: 35%;
+  #marcelfeiler {
+    flex-direction: column;
+  }
+
+  #lukaschytil {
+    flex-direction: column-reverse;
+  }
+
+  #lukasLeft, #marcelRight, #marcelLeft, #lukasRight {
+    position: relative;
+  }
+
+  #marcelLeft, #lukasRight {
     height: 50%;
-}
-  #lukasLeft{
-      top: 25%;
-    }
-
-    #lukaschytil svg{
-        bottom: 20%;
-  }
-  
-  #daliborkralikNavigation{
-      top: 0;
-  }
-  
-  #patriksehnoutekNavigation{
-      top: 0;
-  
+    width: 80%;
+    top: 0;
+    left: 10%;
+    right: 10%;
   }
 
-  
-  #lukaschytilNavigation{
-      top: -2vh;
+  #marcelRight, #lukasLeft {
+    bottom: initial;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    height: 35%;
+    top: initial;
+  }
+
+
+
+  #daliborkralikNavigation {
+    top: 8vh;
+  }
+
+  #patriksehnoutekNavigation {
+    top: 3vh;
+  }
+
+  #marcelNavigation{
+    top: 20vh;
+    
+  }
+
+  #lukaschytilNavigation {
+    top: 20vh;
   }
 }
 
