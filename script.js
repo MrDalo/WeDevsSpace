@@ -29,7 +29,7 @@ function createSvg(){
 }
 
 function createProgrammer(){
-    document.getElementById("patrikLeft").innerHTML = programmer;
+    document.getElementById("patrikRight").innerHTML = programmer;
 }
 
 function createLightBulb(){

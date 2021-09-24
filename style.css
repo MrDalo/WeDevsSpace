@@ -130,7 +130,7 @@ nav a:hover {
 }
 
 #aboutusAnchor {
-  position: relative;
+  position: absolute;
   top: 15%;
 }
 
@@ -264,7 +264,6 @@ nav a:hover {
   right: 20%;
   display: flex;
   justify-content: center;
-
   column-gap: 20px;
   align-items: center;
   flex-wrap: wrap;
@@ -362,7 +361,7 @@ nav a:hover {
   top: -16vh;
 }
 
-#patrikLeft {
+#patrikRight {
   text-align: center;
   width: 30%;
   height: 100%;
@@ -371,7 +370,7 @@ nav a:hover {
   align-items: center;
 }
 
-#patrikLeft svg {
+#patrikRight svg {
   position: relative;
   width: 100%;
 }
@@ -396,7 +395,7 @@ nav a:hover {
   }
 }
 
-#patrikRight {
+#patrikLeft {
   text-align: center;
   padding: 1%;
   position: relative;
@@ -410,12 +409,12 @@ nav a:hover {
   flex-direction: column;
 }
 
-#patrikRight h1 {
+#patrikLeft h1 {
   padding-bottom: 8%;
   font-size: 3em;
 }
 
-#patrikRight h1 a {
+#patrikLeft h1 a {
   color: black;
 }
 
@@ -547,6 +546,7 @@ nav a:hover {
 }
 
 #jansvitana .wavedown {
+  overflow: hidden;
   position: absolute;
   height: 25%;
   width: auto;
@@ -554,6 +554,7 @@ nav a:hover {
 }
 
 #jansvitana .waveup {
+  overflow: hidden;
   height: 25%;
   width: auto;
   animation: wavemove 20s alternate infinite linear;
@@ -602,7 +603,7 @@ footer {
   position: relative;
   color: white;
   text-align: center;
-
+  font-size: 0.7em;
   bottom: 0;
   z-index: 10;
   background-color: #0c0c0c;
@@ -617,23 +618,278 @@ footer {
     width: 30%;
   }
 
-  #daliborLeft{
+  #daliborLeft {
     width: 35%;
     height: 80%;
-
   }
 
-  #marcelRight, #lukasLeft{
+  #marcelRight,
+  #lukasLeft {
     width: 35%;
     height: 50%;
   }
+  #daliborkralikNavigation{
+    top: -5vh;
+}
 
+#patriksehnoutekNavigation{
+    top: 0;
+
+}
+
+
+#lukaschytilNavigation{
+    top: 0;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 18px;
+      }
+
+    nav{
+
+        width: 40%;
+    }
+
+    #aboutus{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #aboutusContent{
+        width: 80%;
+        left:10%;
+        right: 10%;
+        top: 0;
+    }
+
+    #aboutusImage{
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        top: 0;
+        height: 40vh;
+        
+    }
+
+    #content{
+        height: 887vh;
+    }
+
+    #members{
+        height: 737vh;
+
+    }
+
+    #memberButtons{
+        width: 90%;
+        left: 5%;
+        right: 5%;
+
+    }
+
+    #memberButtons a{
+        width: 31%;
+    }
+
+    #daliborkralik{
+        height: 100vh;
+    }
+
+    #daliborLeft {
+        top: 5%;
+        width: 35%;
+        height: 75%;
+      }
+
+    #daliborRight{
+        padding-bottom: 25%;
+    }
+
+    
+    #patriksehnoutekContent{
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    #patrikLeft{
+        top: 10%;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+
+    }    
+    
+    #patrikRight{
+        position: relative;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+
+    #marcelRight,
+    #lukasLeft {
+        width: 35%;
+    height: 50%;
+}
+  #lukasLeft{
+      top: 25%;
+    }
+
+    #lukaschytil svg{
+        bottom: 20%;
+  }
+  
+  #daliborkralikNavigation{
+      top: 0;
+  }
+  
+  #patriksehnoutekNavigation{
+      top: 0;
+  
+  }
+
+  
+  #lukaschytilNavigation{
+      top: -2vh;
+  }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
+    html {
+        font-size: 18px;
+      }
+
+    nav{
+        /*TODO Create burger Menu */
+        width: 40%;
+    }
+
+    #nadpis{
+        font-size: 6em;
+    }
+
+    #aboutus{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #aboutusContent{
+        width: 80%;
+        left:10%;
+        right: 10%;
+        top: 0;
+    }
+
+    #aboutusImage{
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        top: 0;
+        height: 40vh;
+        
+    }
+
+    #content{
+        height: 907vh;
+    }
+
+    #members{
+        height: 757vh;
+
+    }
+
+    #memberButtons{
+        width: 90%;
+        left: 5%;
+        right: 5%;
+
+    }
+
+    #memberButtons span{
+        display: none;
+    }
+    #memberButtons a{
+        width: 31%;
+    }
+
+    #daliborkralik{
+        height: 120vh;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    #daliborLeft {
+        top: 0;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        height: 60%;
+        margin-bottom: 10vh;
+      }
+
+    #daliborRight{
+        top: 0;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        height: 70%;
+        padding-bottom: 0;
+    }
+
+    
+    #patriksehnoutekContent{
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    #patrikLeft{
+        top: 10%;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+
+    }    
+    
+    #patrikRight{
+        position: relative;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+
+    #marcelRight,
+    #lukasLeft {
+        width: 35%;
+    height: 50%;
+}
+  #lukasLeft{
+      top: 25%;
+    }
+
+    #lukaschytil svg{
+        bottom: 20%;
+  }
+  
+  #daliborkralikNavigation{
+      top: 0;
+  }
+  
+  #patriksehnoutekNavigation{
+      top: 0;
+  
+  }
+
+  
+  #lukaschytilNavigation{
+      top: -2vh;
+  }
 }
 
 @media only screen and (max-width: 639px) {
