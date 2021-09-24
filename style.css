@@ -340,8 +340,7 @@ nav a:hover {
 /*Patrik Sehnoutek*/
 #patriksehnoutek {
   position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  
   width: 100%;
   height: 150vh;
   background-color: white;
@@ -351,6 +350,8 @@ nav a:hover {
 #patriksehnoutekContent {
   position: relative;
   width: 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -482,9 +483,8 @@ nav a:hover {
   animation: dash 20s linear reverse infinite;
 }
 
-#marcelNavigation{
-    position: absolute;
-
+#marcelNavigation {
+  position: absolute;
 }
 
 @keyframes dash {
@@ -658,12 +658,14 @@ footer {
   #aboutus {
     flex-direction: column;
     justify-content: center;
+    height: 120vh;
   }
 
   #aboutusContent {
     width: 80%;
     left: 10%;
     right: 10%;
+    height: 40%;
     top: 0;
   }
 
@@ -672,11 +674,11 @@ footer {
     left: 25%;
     right: 25%;
     top: 0;
-    height: 40vh;
+    height: 30vh;
   }
 
   #content {
-    height: 887vh;
+    height: 857vh;
   }
 
   #members {
@@ -845,6 +847,7 @@ footer {
 
   #patrikRight {
     position: relative;
+    height: 70%;
     width: 50%;
     left: 25%;
     right: 25%;
@@ -870,11 +873,15 @@ footer {
     flex-direction: column-reverse;
   }
 
-  #lukasLeft, #marcelRight, #marcelLeft, #lukasRight {
+  #lukasLeft,
+  #marcelRight,
+  #marcelLeft,
+  #lukasRight {
     position: relative;
   }
 
-  #marcelLeft, #lukasRight {
+  #marcelLeft,
+  #lukasRight {
     height: 50%;
     width: 80%;
     top: 0;
@@ -882,16 +889,15 @@ footer {
     right: 10%;
   }
 
-  #marcelRight, #lukasLeft {
+  #marcelRight,
+  #lukasLeft {
     bottom: initial;
-    width: 40%;
-    left: 30%;
-    right: 30%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
     height: 35%;
     top: initial;
   }
-
-
 
   #daliborkralikNavigation {
     top: 8vh;
@@ -901,14 +907,96 @@ footer {
     top: 3vh;
   }
 
-  #marcelNavigation{
+  #marcelNavigation {
     top: 20vh;
-    
   }
 
   #lukaschytilNavigation {
     top: 20vh;
   }
+
+  @media only screen and (max-width: 639px) {
+    
+    html {
+      font-size: 12px;
+    }
+    
+    #nadpis {
+      font-size: 5em;
+    }
+
+    #content {
+        height: 727vh;
+      }
+    
+      #members {
+        height: 627vh;
+      }
+    
+    #aboutusContent h1 {
+        font-size: 3.5em;
+      }
+    #aboutusAnchor{
+        top: 7%;
+    }
+    
+      #daliborRight h1 {
+      padding-bottom: 2vh;
+      font-size: 3em;
+    }
+    
+    #patrikLeft h1 {
+      padding-bottom: 8%;
+      font-size: 3em;
+    }
+    
+    #marcelLeft h1,
+    #lukasRight h1 {
+      padding-bottom: 8%;
+      font-size: 3em;
+    }
+
+    #aboutus{
+        height: 100vh;
+    }
+
+    #aboutusContent{
+        height: 40vh;
+    }
+
+    #aboutusImage{
+        margin-bottom: 10vh;
+    }
+
+    #memberButtons{
+        margin-top: 4vh;
+    }
+
+    #daliborkralik{
+        margin-top: 0;
+        height: 100vh;
+    }
+    #daliborRight{
+        height: 55%;
+    }
+    #daliborLeft{
+        height: 45%;
+    }
+    #daliborLeft img{
+        height: 90%;
+    }
+
+    #patriksehnoutek{
+        height: 100vh;
+    }
+
+    #marcelfeiler, #lukaschytil{
+        height: 100vh;
+    }
+
+    #marcelNavigation, #lukaschytilNavigation {
+        top: 10vh;
+      }
+    
+  }
 }
-
-
