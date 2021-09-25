@@ -10,7 +10,8 @@
 
 a {
   font-weight: 800;
-  color: white;
+  color:white;
+  list-style-type: none;
   text-decoration: underline;
 }
 
@@ -67,30 +68,125 @@ body {
   background-color: #0c0c0c;
 }
 
+#burger{
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 40px;
+  padding: 5px;
+  height: 30px;
+  background-color: white;
+  justify-content: space-evenly;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.burgerlines{
+  position: relative;
+  width: 60%;
+  background-color: #0c0c0c;
+  height: 10%;
+  left: 20%;
+  right: 20%;
+  border-radius: 40px;
+  transform-origin: 1px;
+  transition: all linear 0.3s;
+}
+
+
+
+
+
 nav {
   position: absolute;
   z-index: 10;
   top: 6%;
-  width: 30%;
+  width: 100%;
   right: 0;
   color: white;
   display: flex;
-  justify-content: space-between;
-  padding-right: 5%;
-  flex-direction: row;
-  text-align: center;
+  justify-content: flex-end;
 }
 
-nav a {
+nav li{
   padding: 2% 5%;
   font-size: 1em;
   border: solid white 2px;
   border-radius: 40px;
   text-decoration: none;
   color: white;
+  
 }
 
-nav a:hover {
+.UlTrigger{
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  top: 10%;
+  height: 100%;
+  color: #0c0c0c;
+
+  transition: all linear 0.5s;
+  padding-right: 0;
+}
+
+.UlTrigger li{
+  border: none;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  border-radius: 0;
+  background-color: white;
+  border-bottom: #0c0c0c 2px solid;
+}
+.UlTrigger li a{
+  color: #0c0c0c;
+}
+
+.lineChange0{
+  transform: rotateZ(45deg);
+}
+
+
+.lineChange1{
+  opacity: 0;
+}
+
+
+.lineChange2{
+  transform: rotateZ(-45deg);
+}
+
+
+
+
+nav li a{
+  text-decoration: none;
+}
+
+nav ul{
+  list-style-type: none;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 5%;
+  column-gap: 10%;
+  flex-direction: row;
+  text-align: center;
+}
+
+nav li a:hover {
+  animation-duration: 0.5s;
+  animation-name: prechod;
+  animation-fill-mode: forwards;
+}
+
+nav li:hover {
   animation-duration: 0.5s;
   animation-name: prechod;
   animation-fill-mode: forwards;
@@ -652,7 +748,7 @@ footer {
     font-size: 18px;
   }
 
-  nav {
+  nav ul{
     width: 40%;
   }
 
@@ -755,14 +851,17 @@ footer {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 18px;
   }
 
-  nav {
-    /*TODO Create burger Menu */
-    width: 40%;
+  nav ul{
+    opacity: 0;
+  }
+
+  #burger{
+    display: flex;
   }
 
   #nadpis {

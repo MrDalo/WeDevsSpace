@@ -46,6 +46,17 @@ function lightFunction(){
     document.getElementById("jansvitana").classList.toggle("lighton");
     document.getElementById("bulb").classList.toggle("bulbOn");
 }
+
+function triggerUl(){
+    document.getElementById("navUl").classList.toggle("UlTrigger");
+    document.getElementsByClassName("burgerlines")[0].classList.toggle("lineChange0");
+    document.getElementsByClassName("burgerlines")[1].classList.toggle("lineChange1");
+    document.getElementsByClassName("burgerlines")[2].classList.toggle("lineChange2");
+    console.log("Hello");
+    
+
+}
+
     /* VARIABLES */ 
     
     
