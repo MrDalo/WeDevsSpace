@@ -1,4 +1,6 @@
 
+
+
 /*function for createing all stars*/
 function creator(){
     for(let i = 0; i < 120; i++){
@@ -24,6 +26,7 @@ function constructor() {
 
 }
 
+
 function createSvg(){
     document.getElementById("aboutusImage").innerHTML=svgImage;
 }
@@ -37,9 +40,9 @@ function createLightBulb(){
 }
 
 
-function isInViewport(element){
+function isInViewport(element, offset){
     const rect = element.getBoundingClientRect();
-    return ((window.innerHeight || document.documentElement.clientHeight) - rect.top > 0 && rect.bottom > 0); 
+    return ((window.innerHeight || document.documentElement.clientHeight) - offset - rect.top > 0 && rect.bottom - offset > 0); 
 }
     
 function lightFunction(){
@@ -274,14 +277,26 @@ window.addEventListener("scroll", () => {
 
     nadpis.style.opacity = `${1 - (valueOfScroll / (window.innerHeight / 2))}`;
 
-     if(isInViewport(daliborBox)){
+     if(isInViewport(daliborBox, 0)){
         const rect = daliborBox.getBoundingClientRect();
-        
         let image = daliborBox.getElementsByTagName("img");
-        console.log(image[0]);
         image[0].style.transform=`translateY(${rect.top * 0.1}px)`
         
     }
+})
 
+window.addEventListener("scroll", ()=>{
+    let arrayOfScrollElements = document.getElementsByClassName("scrollElement"); 
+    
+    //Array.from converts HTML collection to array//
+    //getElementsByClassName returns HTML collection//
+    Array.from(arrayOfScrollElements).forEach(element =>{
+        if(isInViewport(element, (window.innerHeight || document.documentElement.clientHeight)*0.1)){
+            element.classList.add("visible");
+        }else{
+            element.classList.remove("visible");
+        }
+
+    })
 
 })

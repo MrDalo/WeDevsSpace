@@ -212,6 +212,21 @@ nav li:hover {
   width: 100%;
 }
 
+.scrollElement{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1.5s linear;
+  
+}
+
+.visible{
+  opacity: 1;
+  transform: translateY(0px);
+  
+
+  
+}
+
 #aboutus {
   top: 0;
   position: relative;
