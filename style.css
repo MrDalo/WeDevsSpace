@@ -215,7 +215,7 @@ nav li:hover {
 .scrollElement{
   opacity: 0;
   transform: translateY(50px);
-  transition: 1.5s linear;
+  transition: 1s linear;
   
 }
 
@@ -562,7 +562,8 @@ nav li:hover {
 }
 
 #marcelLeft h1,
-#lukasRight h1 {
+#lukasRight h1,
+#jansvitanaRight h1 {
   padding-bottom: 8%;
   font-size: 3em;
 }
@@ -650,12 +651,16 @@ nav li:hover {
   position: relative;
   height: 200vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #333333;
 }
 
 .lighton {
-  background-image: radial-gradient(at 40%, white 10%, #eeeeee 40%, #666666);
+  background-image: radial-gradient(at 30%, white 10%, #eeeeee 40%, #666666);
+}
+
+.rightLighton p, .rightLighton a{
+  color: black !important;
 }
 
 #bulb {
@@ -698,8 +703,27 @@ nav li:hover {
 #jansvitanaLeft {
   position: relative;
   height: 70%;
-  width: 30%;
+  width: 25%;
 }
+
+#jansvitanaRight{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  /*border: red solid 2px;*/
+  height: 40%;
+  top: 60vh;
+  position: relative;
+}
+
+#jansvitanaRight p{
+  font-size: 0.8em;
+}
+
+
 
 #lightBulb {
   position: relative;
@@ -988,13 +1012,14 @@ footer {
     flex-direction: column-reverse;
   }
 
+  
   #lukasLeft,
   #marcelRight,
   #marcelLeft,
   #lukasRight {
     position: relative;
   }
-
+  
   #marcelLeft,
   #lukasRight {
     height: 50%;
@@ -1003,7 +1028,7 @@ footer {
     left: 10%;
     right: 10%;
   }
-
+  
   #marcelRight,
   #lukasLeft {
     bottom: initial;
@@ -1012,6 +1037,28 @@ footer {
     right: 25%;
     height: 35%;
     top: initial;
+  }
+
+  #jansvitana{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #jansvitanaRight{
+    padding-top: 10vh;
+    justify-content: flex-start;
+  }
+
+  #jansvitanaLeft{
+    left: 40%;
+    height: 40%;
+  }
+
+  #jansvitanaRight{
+    top: 0;
+    width: 80%;
+    left: 10%;
+    right: 10%;
   }
 
   #daliborkralikNavigation {

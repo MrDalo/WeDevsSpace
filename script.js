@@ -47,6 +47,7 @@ function isInViewport(element, offset){
     
 function lightFunction(){
     document.getElementById("jansvitana").classList.toggle("lighton");
+    document.getElementById("jansvitanaRight").classList.toggle("rightLighton");
     document.getElementById("bulb").classList.toggle("bulbOn");
 }
 
