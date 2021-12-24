@@ -467,6 +467,11 @@ nav li:hover {
   justify-content: space-evenly;
 }
 
+#patriksehnoutekContent a{
+  color: black;
+  
+}
+
 #patriksehnoutekNavigation {
   display: initial;
   position: absolute;
